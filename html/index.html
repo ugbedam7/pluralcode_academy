@@ -317,19 +317,20 @@
       4) alt => usef for images
       5) action => used in forms
       6) class attribute (can be used on any element, selected in css using .)
-      7) id attribute (can be used on any element, slected in css using #)
+      7) id attribute (can be used on any element, selected in css using #)
       8) style attribute (can be used on any element, its a special kind of attribute that takes style='property:value')
      -->
     <a style="color: red; font-size: 30px">visit about</a
     ><a href="" target="">visit about</a>
 
     <img />
-    <img src="img/image.png" alt="" width="200px" height="200px" />
+    <img src="image.png" alt="" width="200px" height="200px" />
 
     <div style="padding: 100px"></div>
 
     <script>
-      document.getElementById('form').addEventListener('submit', () => {
+      document.getElementById('form').addEventListener('submit', (e) => {
+        e.preventDefault();
         alert('form submitted');
       });
     </script>
