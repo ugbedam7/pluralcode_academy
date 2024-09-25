@@ -1,0 +1,318 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: whitesmoke;
+  /* font-weight: 100;
+  font-style: normal; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  position: fixed;
+  background-color: #395143;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+  top: 0;
+  height: 80px;
+}
+
+nav h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  /* font-weight: 500; */
+  color: #fff;
+  transition: color 0.5s, font-size 0.5s;
+}
+
+nav ul li a:hover {
+  color: #cad5d3;
+  font-size: 21px;
+}
+
+nav ul li a.icons {
+  color: #fff;
+}
+.icons {
+  text-decoration: none;
+  font-size: 30px;
+  color: #374e40;
+  transition: font-size 0.5s;
+}
+
+.icons:hover {
+  font-size: 35px;
+  color: #a8baa5;
+}
+
+.main-container {
+  width: 90%;
+  margin: auto;
+}
+
+.hero {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  justify-content: space-around;
+}
+
+.hero-info {
+  width: 50%;
+  font-size: 20px;
+}
+
+.hero-info-2 {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+/*----------------The About Section --------------*/
+.about {
+  height: 350px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #152522;
+}
+
+.about p.about-info {
+  width: 60%;
+  margin: auto;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #395143;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 2s;
+}
+
+button:hover {
+  background-color: #828e8c;
+}
+
+button a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 3px;
+  color: #fff;
+}
+
+/* ---------------The Skills Section-------------------*/
+
+.skills {
+  text-align: center;
+  height: 450px;
+  /* border: 1px solid red; */
+}
+
+.skills h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #152522;
+}
+
+.skills > p {
+  font-size: 22px;
+}
+
+.skills div.skill-details {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  /* border: 1px solid green; */
+}
+
+.section {
+  /* border: 1px solid red; */
+  width: 40%;
+}
+
+.section div {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+}
+
+.section div span.logo {
+  font-size: 45px;
+  color: #395143;
+  margin-right: 10px;
+  /* border: 1px solid red; */
+}
+
+.section div div {
+  display: block;
+  flex: 1;
+}
+
+.section div div p {
+  width: 20%;
+  font-size: 18px;
+}
+
+input[type='range'] {
+  /* -webkit-appearance: none; */
+  appearance: none;
+  background: #395143;
+  cursor: pointer;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 3px;
+}
+
+/*-------------Services Section--------------------*/
+.services {
+  text-align: center;
+  height: 750px;
+  border-bottom: 2px solid #374e40;
+}
+
+.services h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #152522;
+}
+
+.services div svg {
+  font-size: 30px;
+  color: #395143;
+}
+
+.services div h3 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #152522;
+}
+
+.services div p {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+}
+
+/*----------Contact Section-------------*/
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5px;
+  height: 500px;
+}
+
+.contact div h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #152522;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  height: 150px;
+}
+
+footer h3 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #152522;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.footer::before,
+.footer::after {
+  content: '';
+  height: 3px;
+  flex: 1;
+  background-color: black;
+}
+
+input[type='text'] {
+  width: 300px;
+  border: 1px solid #374e40;
+  height: 2.5rem;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+input[type='email'] {
+  width: 300px;
+  height: 2.5rem;
+  border-radius: 4px;
+  border: 1px solid #374e40;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  border: none;
+  font-size: 18px;
+  border: 1px solid #374e40;
+  border-radius: 4px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button[type='submit'] {
+  width: 300px;
+  height: 35px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
