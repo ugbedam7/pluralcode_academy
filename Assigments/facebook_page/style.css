@@ -21,6 +21,7 @@ body {
 
 .left {
   width: 42%;
+  padding-bottom: 100px;
 }
 
 .left h2 {
