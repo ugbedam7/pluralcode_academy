@@ -30,7 +30,7 @@ body {
   font-size: 28px;
   font-weight: normal;
   line-height: 32px;
-  width: 500px;
+  width: 120%;
 }
 
 .right {
@@ -125,4 +125,49 @@ button {
 
 .create-acct a:hover {
   background-color: #2b8b18;
+}
+
+/* Responsive CSS for stacking right over left */
+@media (max-width: 944px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .left {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .left h2 {
+    width: 100%;
+  }
+  .right,
+  .left {
+    width: 70%;
+  }
+
+  /* .right {
+    margin-top: 5px;
+  } */
+}
+
+@media (max-width: 605px) {
+  .left h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1131px) {
+  p.create-acct a {
+    font-size: 16px;
+  }
 }
