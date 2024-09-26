@@ -1,0 +1,127 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica';
+  width: 80%;
+  margin: auto;
+  background-color: #f2f4f7;
+}
+
+.container {
+  margin-top: 30px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  width: 42%;
+}
+
+.left h2 {
+  margin-top: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 500px;
+}
+
+.right {
+  width: 40%;
+}
+
+.right form {
+  height: 375px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  padding-top: 15px;
+}
+
+.right p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+input[type='text'] {
+  width: 90%;
+  height: 3.5rem;
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  font-size: 16px;
+  opacity: 0.3;
+}
+
+input[type='password'] {
+  width: 90%;
+  height: 3.5rem;
+  margin-top: 10px;
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  font-size: 16px;
+  opacity: 0.3;
+}
+
+button {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  height: 3rem;
+  background-color: #1877f2;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgotten {
+  border-bottom: 1px solid lightgray;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.forgotten a {
+  text-decoration: none;
+}
+
+.forgotten a:hover {
+  text-decoration: underline;
+}
+
+.create-acct {
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.create-acct a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  width: 53%;
+  height: 3rem;
+  margin: auto;
+  background-color: #36a420;
+  border-radius: 5px;
+  padding-top: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-ground 2s;
+}
+
+.create-acct a:hover {
+  background-color: #2b8b18;
+}
