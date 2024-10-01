@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Helvetica';
+  font-family: Helvetica;
   width: 80%;
   margin: auto;
   background-color: #f2f4f7;
@@ -43,7 +43,8 @@ body {
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 8px;
-  padding-top: 15px;
+  padding: 15px 15px 15px;
+  width: 100%;
 }
 
 .right p {
@@ -51,30 +52,26 @@ body {
   text-align: center;
 }
 
-input[type='text'] {
-  width: 90%;
+input {
+  width: 100%;
   height: 3.5rem;
   padding: 15px;
   border: 2px solid rgba(0, 0, 0, 0.24);
+  outline: none;
+  margin-bottom: 10px;
   border-radius: 5px;
   font-size: 16px;
+  padding: 15px;
   opacity: 0.3;
 }
 
-input[type='password'] {
-  width: 90%;
-  height: 3.5rem;
-  margin-top: 10px;
-  padding: 15px;
-  border: 2px solid rgba(0, 0, 0, 0.24);
-  border-radius: 5px;
-  font-size: 16px;
-  opacity: 0.3;
+input:focus {
+  border: 3px solid #1877f2;
 }
 
 button {
-  width: 90%;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 8px;
   margin-bottom: 2px;
   height: 3rem;
   background-color: #1877f2;
@@ -86,7 +83,7 @@ button {
   cursor: pointer;
 }
 
-.forgotten {
+.forgot {
   border-bottom: 1px solid lightgray;
   width: 90%;
   margin: auto;
@@ -94,11 +91,11 @@ button {
   padding-bottom: 20px;
 }
 
-.forgotten a {
+.forgot a {
   text-decoration: none;
 }
 
-.forgotten a:hover {
+.forgot a:hover {
   text-decoration: underline;
 }
 
@@ -127,8 +124,22 @@ button {
   background-color: #2b8b18;
 }
 
+.right p {
+  font-size: 14px;
+}
+
 /* Responsive CSS for stacking right over left */
-@media (max-width: 944px) {
+@media (max-width: 1231px) {
+  .right {
+    width: 45%;
+  }
+
+  p.create-acct a {
+    width: 55%;
+  }
+}
+
+@media (max-width: 1100px) {
   .container {
     flex-direction: column;
     justify-content: center;
@@ -145,14 +156,15 @@ button {
   .left h2 {
     width: 100%;
   }
+
   .right,
   .left {
     width: 70%;
   }
 
-  /* .right {
-    margin-top: 5px;
-  } */
+  p.create-acct a {
+    width: 75%;
+  }
 }
 
 @media (max-width: 605px) {
@@ -161,13 +173,26 @@ button {
     text-align: center;
   }
 
-  .right {
+  .right,
+  .left {
     width: 100%;
+  }
+
+  /* .left {
+    width: 100%;
+  } */
+
+  p.create-acct a {
+    width: 70%;
   }
 }
 
-@media (max-width: 1131px) {
+@media (max-width: 400px) {
+  .left {
+    width: 100%;
+  }
+
   p.create-acct a {
-    font-size: 16px;
+    width: 80%;
   }
 }

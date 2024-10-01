@@ -206,6 +206,19 @@ input[type='range'] {
   border-radius: 3px;
 }
 
+progress {
+  appearance: none;
+  cursor: pointer;
+  width: 100%;
+  height: 0.7rem;
+  border-radius: 5px;
+  background: #fff;
+}
+
+progress::-moz-progress-bar {
+  background: #395143;
+}
+
 /*-------------Services Section--------------------*/
 .services {
   text-align: center;
