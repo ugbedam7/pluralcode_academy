@@ -50,6 +50,21 @@
             </a>
           </li>
         </ul>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 17h18M3 12h18M3 7h18" />
+          </svg>
+        </a>
       </nav>
 
       <a href="#container" class="arrow-icon">
@@ -220,8 +235,8 @@
                 </span>
                 <div>
                   <p>Python</p>
-                  <progress value="90" max="100">90%</progress>
-                  <!-- <input type="range" value="90" /> -->
+                  <!-- <progress value="90" max="100">90%</progress> -->
+                  <input type="range" value="90" />
                 </div>
               </div>
             </div>
@@ -356,12 +371,33 @@
           <div class="Message">
             <h2>Send A Message</h2>
             <form>
-              <label for="">Full Name</label><br />
-              <input type="text" /><br />
-              <label for="">Email</label><br />
-              <input type="email" /><br />
-              <label for="">Message</label><br />
-              <textarea></textarea><br />
+              <div class="name">
+                <div class="label">
+                  <label for="">Full Name</label>
+                </div>
+                <div class="input-name">
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="email">
+                <div class="label">
+                  <label for="">Email</label>
+                </div>
+                <div class="input-email">
+                  <input type="email" />
+                </div>
+              </div>
+
+              <div class="Message">
+                <div class="label">
+                  <label for="">Message</label>
+                </div>
+                <div class="text">
+                  <textarea></textarea>
+                </div>
+              </div>
+
               <button type="submit">Send Message</button>
             </form>
           </div>
