@@ -52,7 +52,8 @@ h1 {
   /* right: 0px; */
 }
 
-/* when a position is set to abolute, without its parent container set to relative, it will be relatively absolute to the browser */
+/* when a position is set to abolute, without its parent container set to
+ relative, it will be relatively absolute to the browser */
 
 .box {
   border: 1px solid black;
