@@ -174,7 +174,8 @@
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen=""></iframe>
+      allowfullscreen=""
+    ></iframe>
     <hr />
     <!-- table tag -->
     <!-- table, tr, th and td (thead tbody) -->
@@ -245,14 +246,13 @@
           <option value="">software dev</option>
           <option value="">php dev</option>
         </optgroup>
-        <optgroup label="Designs">
+        <optgroup label="Desings">
           <option value="ui/ux">Ui/ux</option>
           <option value="graphics">graphics</option>
           <option value="corel_draw">corel draw</option>
           <option value="photoshop">photoshop</option>
-        </optgroup>
-      </select>
-      <br /><br />
+        </optgroup></select
+      ><br /><br />
       <label for="">Thumbnail</label> <br />
       <input type="file" />
       <br /><br />
@@ -283,7 +283,8 @@
           placeholder="e.g johndoe@gmail.com"
           readonly
           value="ejovwogfreeman007@gmail.com"
-          required />
+          required
+        />
         <br />
         <br />
         <label for="password">Password</label><br />
@@ -291,7 +292,8 @@
           type="password"
           id="password"
           placeholder="enter password"
-          required />
+          required
+        />
         <br /><br />
         <button>submit</button>
       </fieldset>
@@ -317,21 +319,20 @@
       4) alt => usef for images
       5) action => used in forms
       6) class attribute (can be used on any element, selected in css using .)
-      7) id attribute (can be used on any element, selected in css using #)
+      7) id attribute (can be used on any element, slected in css using #)
       8) style attribute (can be used on any element, its a special kind of attribute that takes style='property:value')
      -->
     <a style="color: red; font-size: 30px">visit about</a
     ><a href="" target="">visit about</a>
 
     <img />
-    <img src="image.png" alt="" width="200px" height="200px" />
+    <img src="img/image.png" alt="" width="200px" height="200px" />
 
     <div style="padding: 100px"></div>
 
     <script>
-      document.getElementById('form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('form submitted');
+      document.getElementById("form").addEventListener("submit", () => {
+        alert("form submitted");
       });
     </script>
   </body>
